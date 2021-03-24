@@ -66,8 +66,8 @@ const Home: React.FC = () => {
             <div className="input-group">
                 <h2>Choose a joke category</h2>
                 <div>
-                    <select className="input-main" defaultValue={0} onChange={(e) => handleJokes(e.target.value)}>
-                        <option disabled selected value={0}> -- select an option -- </option>
+                    <select className="input-main" defaultValue="0" onChange={(e) => handleJokes(e.target.value)}>
+                        <option disabled selected value="0"> -- select an option -- </option>
                         {categoriesJoke.map( (joke, index) => (
                             <option key={index} value={joke}>{joke}</option>
                         ))}
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="joker-group">
-                { isLoad ? <img className="loading-image rotating" src={LoadingChuck} alt="load"/> : resultSearch.map( result => (
+                { !isLoad ? <img className="loading-image rotating" src={LoadingChuck} alt="load"/> : resultSearch.map( result => (
                     <div className="joker" key={result.id}>
                         <img src={result.icon_url} alt={result.value}/>
                         <h3>{result.value}</h3>
