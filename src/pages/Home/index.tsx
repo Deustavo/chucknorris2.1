@@ -32,15 +32,17 @@ const Home: React.FC = () => {
         setIsLoad(true);
         try {
             if(allJokes) {
-                var response = await api.get(`jokes/search?query=${e}`);
-                setResultSearch(response.data.result);
+                var response1 = await api.get(`jokes/search?query=${e}`);
+                setResultSearch(response1.data.result);
+                if(response1.status === 200 ){
+                    setIsLoad(false);
+                }
             } else {
-                var response = await api.get(`jokes/random?category=${e}`);
-                setResultSearch([response.data]);
-            }
-
-            if(response.status === 200 ){
-                setIsLoad(false);
+                var response2 = await api.get(`jokes/random?category=${e}`);
+                setResultSearch([response2.data]);
+                if(response2.status === 200 ){
+                    setIsLoad(false);
+                }
             }
         } catch {
             setIsLoad(false);
@@ -67,7 +69,7 @@ const Home: React.FC = () => {
                 <h2>Choose a joke category</h2>
                 <div>
                     <select className="input-main" defaultValue="0" onChange={(e) => handleJokes(e.target.value)}>
-                        <option disabled selected value="0"> -- select an option -- </option>
+                        <option disabled value="0"> -- select an option -- </option>
                         {categoriesJoke.map( (joke, index) => (
                             <option key={index} value={joke}>{joke}</option>
                         ))}
@@ -86,7 +88,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="joker-group">
-                { !isLoad ? <img className="loading-image rotating" src={LoadingChuck} alt="load"/> : resultSearch.map( result => (
+                { isLoad ? <img className="loading-image rotating" src={LoadingChuck} alt="load"/> : resultSearch.map( result => (
                     <div className="joker" key={result.id}>
                         <img src={result.icon_url} alt={result.value}/>
                         <h3>{result.value}</h3>
