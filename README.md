@@ -1,3 +1,13 @@
+# Olá amigo 🐇
+
+Esse repositório foi criado originalmente por Douglas Morais (https://github.com/mrdouglasmorais) em um processo seletivo.
+A proposta de sugerida, além de aprender mais sobre react, aprimorar a plataforma e mostrar nossas habilidades 💪💪
+
+<br>
+<br>
+<br>
+
+# Documentação
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
