@@ -1,7 +1,7 @@
 # Olá amigo 🐇
 
-Esse repositório foi criado originalmente por Douglas Morais (https://github.com/mrdouglasmorais) em um processo seletivo.
-A proposta sugerida era de, além de aprender mais sobre react, aprimorar a plataforma e mostrar nossas habilidades 💪💪
+<p>Esse repositório foi criado originalmente por Douglas Morais (https://github.com/mrdouglasmorais) em um processo seletivo.</p>
+<p>A proposta sugerida é de, além de aprender mais sobre react, aprimorar a plataforma e mostrar nossas habilidades 💪💪</p>
 
 <br>
 <br>
