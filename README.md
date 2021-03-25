@@ -1,6 +1,6 @@
 # Olá amigo 🐇
 
-<p>Esse repositório foi criado originalmente por [Douglas Morais](https://github.com/mrdouglasmorais) em um processo seletivo.</p>
+Esse repositório foi criado originalmente por [Douglas Morais](https://github.com/mrdouglasmorais) em um processo seletivo.
 <p>A proposta sugerida é de, além de aprender mais sobre react, aprimorar a plataforma e mostrar nossas habilidades 💪💪</p>
 <p>👇 Se liga como ficou a minha versão 👇</p>
 <p>https://chucknorrisjokes.vercel.app/</p>
